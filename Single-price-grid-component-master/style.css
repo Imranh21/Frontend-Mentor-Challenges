@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: hsl(204, 43%, 93%);
+	margin: 0;
+	padding: 0;
+	font-family: 'Karla', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+main {
+	max-width: 660px;
+	background-color: #fff;
+	margin: auto;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	overflow: hidden;
+	border-radius: 8px;
+}
+.header {
+	padding-top: 0; 
+}
+.header h1 {
+	color: hsl(179, 62%, 43%);
+	font-size: 32px;
+}
+.header h3 {
+	color: hsl(71, 73%, 54%);
+}
+.header p {
+	line-height: 30px;
+	color: hsl(218, 22%, 67%);
+}
+
+
+section {
+	padding: 20px 30px;
+}
+.row {
+	display: flex;
+}
+.row > section {
+	flex: 1;
+}
+.cyan {
+	background-color: hsl(179, 62%, 43%);
+	color: #fff;
+}
+.price-sec p {
+	font-size: 35px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+
+}
+.price-sec span {
+	font-size: 16px;
+	color: #eee;
+	margin-left: 10px;
+}
+button {
+	width: 100%;
+	background-color: hsl(71, 73%, 54%);
+	font-size: 16px;
+	font-weight: 70px;
+	padding: 15px;
+	border: none;
+	margin-top: 15px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.greyish {
+	background-color: hsl(179, 62%, 52%);
+	color: #fff;
+}
+
+
+
+section ul {
+	list-style: none;
+	padding: 0;
+}
+
+section ul li {
+	line-height: 24px;
+	color: hsl(204, 43%, 93%);
+	font-size: 14px;
+}
+
+
+@media (max-width: 375px) {
+	.row {
+		flex-direction: column;
+	}
+	.header h1 {
+		font-size: 24px;
+	}
+}
+
+
