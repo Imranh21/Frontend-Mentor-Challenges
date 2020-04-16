@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/bg-intro-desktop.png);
+	background-color: hsl(0, 100%, 74%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box > div {
+	width: 50%;
+}
+
+
+
+.left, .right {
+	padding: 40px;
+}
+
+
+
+
+.left .heading {
+	margin-bottom: 20px;
+	font-size: 3em;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+
+.left .para {
+	color: #fff;
+}
+
+
+
+
+
+
+
+.right .offerBtn {
+	width: 100%;
+	padding: 15px 0;
+	box-shadow: 0 5px 2px rgba(0,0,0,0.2);
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+}
+
+
+
+
+.right form {
+	padding: 20px 30px;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.right form input {
+	width: 100%;
+	display: block;
+	padding: 15px 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	font-weight: 600;
+}
+.right form input:focus {
+	border: 1px solid #333;
+	outline: none;
+}
+.right .formBtn {
+	width: 100%;
+	padding: 15px 0;
+	box-shadow: 0 5px 2px hsl(154, 35%, 60%);
+	background-color: hsl(154, 59%, 51%);
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+	margin: 20px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.right form p {
+	font-size: .7rem;
+	text-align: center;
+	color: #ccc;
+}
+
+.right form p span {
+	color: hsl(0, 100%, 74%);
+	font-weight: 600;
+}
+
+
+.common-para {
+	margin-top: 5px;
+	
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		background-image: url(images/bg-intro-mobile.png);
+		background-color: hsl(0, 100%, 74%);
+		background-position: center;
+	}
+
+	.box {
+		width: 100%;
+	}
+	.container .box {
+		flex-direction: column;
+	}
+	.container .box > div {
+		width: 100%;
+	}
+
+	.left {
+		
+		text-align: center;
+	}
+	.left .heading {
+		font-size: 1.5rem;
+	}
+}
