@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: hsl(230, 17%, 14%);
+}
+
+
+
+
+
+
+
+
+
+
+header {
+	width: 100%;
+	height: 240px;
+	background: hsl(232, 19%, 15%);
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+
+.wrapper .dash h2 {
+	font-size: 2em;
+	color: #fff;
+}
+.wrapper .dash h3 {
+	margin-top: 10px;
+	font-size: 1vw;
+	color: hsl(228, 34%, 66%);
+}
+
+
+
+.wrapper .toggle {
+	display: flex;
+	position: relative;
+
+}
+.wrapper .toggle p {
+	margin-right: 10px;
+	color: #fff;
+}
+.wrapper .toggle .checkbox {
+	position: absolute;
+	opacity: 0;
+
+}
+
+.wrapper .toggle .label {
+	width: 50px;
+	height: 24px;
+	border-radius: 50px;
+	
+	position: relative;
+	transition: .3s;
+	background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+}
+
+.wrapper .toggle .label .ball {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	transition: .2s;
+	cursor: pointer;
+	background: #333;
+}
+
+
+
+
+.checkbox:checked + .label .ball {
+	transform: translateX(25px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* box 1 */
+
+
+.box {
+	width: 80%;
+	margin: 0 auto ;
+	background: transparent;
+	display: flex;
+	padding: 0px ;
+	margin-top: -100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.box .card {
+	width: 22%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 30px;
+	background: hsl(228, 28%, 20%);
+	border-radius: 3px;
+}
+
+
+
+.box .facebook {
+	border-top: 3px solid hsl(195, 100%, 50%);
+}
+.box .twitter {
+	border-top: 3px solid hsl(203, 89%, 53%);
+}
+.box .instagram {
+	border-top: 3px solid  hsl(37, 97%, 70%) ;
+}
+.box .youtube {
+	border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+
+
+
+.box .card .img-user {
+	display: flex;
+	padding: 5px;
+}
+
+
+.box .card .img-user img {
+	margin-right: 5px;
+}
+.box .card .img-user p {
+	color: hsl(228, 12%, 44%);
+}
+.box .card .followers {
+	font-size: 2.5rem;
+	margin-top: 20px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.box .card .f-num {
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	color: hsl(228, 12%, 44%);
+
+}
+.box .card .update {
+	display: flex;
+	align-items: center;
+}
+.box .card .update img {
+	height: 20%;
+	margin-right: 3px;
+}
+
+.box .card .update .green {
+	font-size: 12px;
+	color: hsl(163, 72%, 41%);
+	font-weight: 700;
+}
+.box .card .update .red {
+	font-size: 12px;
+	color: hsl(356, 69%, 56%);
+	font-weight: 700;
+}
+
+
+
+
+
+
+/* box 2  */
+
+
+.box2 {
+	width: 80%;
+	margin: 50px auto;
+}
+.box2 .heading {
+	color: hsl(0, 0%, 100%);
+}
+.box2-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.box2-wrapper .card2 {
+	width: 22%;
+	background: hsl(228, 28%, 20%);
+	border-radius: 5px;
+	margin-top: 20px;
+	padding:20px;
+}
+.box2-wrapper .card2 .head p {
+	color: hsl(228, 12%, 44%);
+}
+.box2-wrapper .card2 .head {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.box2-wrapper .card2 .bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.box2-wrapper .card2 .bottom h2 {
+	color: #fff;
+}
+
+.box2-wrapper .card2 .bottom .percent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.box2-wrapper .card2 .bottom .percent img {
+	margin-right: 3px;
+	height: 20%;
+}
+
+.box2-wrapper .card2 .bottom .percent .green {
+	color: hsl(163, 72%, 41%);
+	font-size: 12px;
+}
+
+.box2-wrapper .card2 .bottom .percent .red {
+	color: hsl(356, 69%, 56%);
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* White Theme */
+
+
+/* Theme for Box1 */
+
+.light {
+	background-color: hsl(0, 0%, 100%);
+    color: hsl(228, 12%, 44%);
+}
+.light header {
+    background-color: hsl(225, 100%, 98%);
+}
+.light .wrapper h2 {
+	color: #000;
+}
+.light .wrapper h3 {
+	color: hsl(228, 12%, 44%);
+}
+.light .wrapper .toggle p {
+	color: hsl(228, 12%, 44%);
+}
+.light .wrapper .toggle .label{
+	background: hsl(230, 22%, 74%);
+}
+.light .card {
+	background: hsl(227, 47%, 96%);
+}
+.light .card .followers {
+	color: #000;
+}
+
+
+/* Theme for Box2 */
+
+.light .heading {
+	color: hsl(228, 12%, 44%);
+}
+.light .box2-wrapper .card2 {
+	background: hsl(227, 47%, 96%);
+}
+.light .box2-wrapper .card2 .bottom h2 {
+	color: #000;
+}
+
+
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+		
+	}
+	.wrapper > div {
+		width: 100%;
+	}
+	.wrapper .dash h2 {
+		font-size: 6vw;
+	}
+
+	.wrapper .dash h3 {
+		font-size: 4vw;
+	}
+	.wrapper .toggle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+
+	}
+
+	.box {
+		flex-direction: column;
+	}
+	.box .card {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.box2-wrapper {
+		flex-direction: column;
+	}
+	.box2-wrapper .card2 {
+		width: 100%;
+	}
+}
